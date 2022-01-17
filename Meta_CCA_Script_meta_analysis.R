@@ -1,14 +1,14 @@
 library(metaCCA)
 
-setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/European/Jupyter_Exports')
+setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/European/Jupyter_Exports/META')
 
-S_XY_full_1 = read.csv('S_XY_full0.csv',row.names=1)
-S_XY_filtered_1 = read.csv('S_XY_filtered0.csv',row.names=1)
+S_XY_full_1 = read.csv('META_S_XY_full0.csv',row.names=1)
+S_XY_filtered_1 = read.csv('META_S_XY_filtered0.csv',row.names=1)
 
-setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/African/Jupyter_Exports')
+setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/African/Jupyter_Exports/META')
 
-S_XY_full_2 = read.csv('S_XY_full0.csv',row.names=1)
-S_XY_filtered_2 = read.csv('S_XY_filtered0.csv',row.names=1)
+S_XY_full_2 = read.csv('META_S_XY_full0.csv',row.names=1)
+S_XY_filtered_2 = read.csv('META_S_XY_filtered0.csv',row.names=1)
 
 levels(S_XY_full_1[,1]) = levels(S_XY_full_study1[,1])
 levels(S_XY_full_1[,2]) = levels(S_XY_full_study1[,2])
