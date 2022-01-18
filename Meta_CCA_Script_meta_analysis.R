@@ -1,3 +1,5 @@
+start_time = Sys.time()
+
 library(metaCCA)
 
 setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/European/Jupyter_Exports/META')
@@ -37,6 +39,10 @@ metaCCA_res1 = metaCcaGp( nr_studies = 2,
 							N = c(N1, N2) )
 							
 print(head(metaCCA_res1[1:2]), digits = 2)
+
+end_time = Sys.time()
+
+print('Run time: 'end_time - start_time)
 
 setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/Meta_Analysis')
 
