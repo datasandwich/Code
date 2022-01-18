@@ -4,13 +4,13 @@ library(metaCCA)
 
 setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/European/Jupyter_Exports/META')
 
-S_XY_full_1 = read.csv('META_S_XY_full0.csv',row.names=1)
-S_XY_filtered_1 = read.csv('META_S_XY_filtered0.csv',row.names=1)
+S_XY_full_1 = read.csv('FULL/META_S_XY_full0.csv',row.names=1)
+S_XY_filtered_1 = read.csv('0.15/META_S_XY_filtered0.csv',row.names=1)
 
 setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/African/Jupyter_Exports/META')
 
-S_XY_full_2 = read.csv('META_S_XY_full0.csv',row.names=1)
-S_XY_filtered_2 = read.csv('META_S_XY_filtered0.csv',row.names=1)
+S_XY_full_2 = read.csv('FULL/META_S_XY_full0.csv',row.names=1)
+S_XY_filtered_2 = read.csv('0.15/META_S_XY_filtered0.csv',row.names=1)
 
 levels(S_XY_full_1[,1]) = levels(S_XY_full_study1[,1])
 levels(S_XY_full_1[,2]) = levels(S_XY_full_study1[,2])
@@ -48,6 +48,6 @@ lengths(S_XY_filtered_1['allele_0'], use.names=FALSE)
 
 N1
 
-setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/Meta_Analysis')
+setwd('/Volumes/Google Drive/My Drive/PROJECT/Data/Aging Biomarkers/Meta_Analysis/0.15')
 
-write.csv(metaCCA_res1[1:2],'Meta_Results_Chrom_1.csv')
+write.csv(metaCCA_res1[1:2],'0.15_Meta_Results_Chrom_1.csv')
