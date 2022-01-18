@@ -15,7 +15,7 @@ S_YY_E = estimateSyy(S_XY_full)
 
 N1 = lengths(S_XY_full['allele_0'], use.names=FALSE)
 
-metaCCA_res1 = metaCcaGp( nr_studies = 1,
+metaCCA_res1 = metaCcaPlusGp( nr_studies = 1,
 							S_XY = list(S_XY_filtered),
 							std_info = c(0),
 							S_YY = list(S_YY_E),
@@ -23,4 +23,4 @@ metaCCA_res1 = metaCcaGp( nr_studies = 1,
 							
 print(head(metaCCA_res1[1:2]), digits = 2)
 
-write.csv(metaCCA_res1[1:2],'Results_Chrom_1.csv')
+write.csv(metaCCA_res1[1:2],'+Results_Chrom_1.csv')
